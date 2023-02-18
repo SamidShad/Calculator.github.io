@@ -1,0 +1,230 @@
+/* FONTS IMPORT */
+@import url("https://fonts.googleapis.com/css2?family=Play:wght@700&display=swap");
+
+/* RESET CSS */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS VARIABLES */
+:root {
+  --bg-color: #d4d4d2;
+  --body-color: #1c1c1c;
+  --screen-color: #505050;
+  --btn-color: #d4d4d2;
+  --primary-color: #ff9500;
+}
+
+body {
+  background-color: var(--bg-color);
+}
+
+.contianer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.calculator_body {
+  background-color: var(--body-color);
+  width: 480px;
+  height: 740px;
+  border-radius: 30px;
+  margin: 5px;
+  display: flex;
+  padding: 3px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.calculator_screen {
+  background-color: var(--screen-color);
+  width: 440px;
+  border-radius: 10px;
+  font-family: "Play", sans-serif;
+  height: 130px;
+  font-size: 50px;
+  outline: none;
+  color: white;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.buttons {
+  margin-top: 10px;
+}
+
+.button_area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.button_area3 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.button_area4 {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.btn {
+  background-color: var(--btn-color);
+  border-radius: 10px;
+  width: 100px;
+  font-family: "Play", sans-serif;
+  cursor: pointer;
+  height: 100px;
+  margin: 5px;
+  font-size: 35px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.sp_btns {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.btn:active {
+  box-shadow: rgba(0, 0, 0, 0.17) 0px 23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.clear {
+  background-color: var(--primary-color);
+  width: 210px;
+  height: 100px;
+  font-family: "Play", sans-serif;
+  margin: 5px;
+  font-size: 35px;
+  color: white;
+  cursor: pointer;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+.plus {
+  background-color: var(--primary-color);
+  width: 100px;
+  margin: 5px;
+  height: 210px;
+  font-size: 35px;
+  font-family: "Play", sans-serif;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  border-radius: 10px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+
+/* RESPONSIVE */
+
+@media only screen and (max-width: 500px) {
+  .calculator_body {
+    width: 380px;
+    height: 610px;
+    padding: 5px;
+  }
+  .calculator_screen {
+    width: 350px;
+    height: 120px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 80px;
+  }
+  .clear {
+    width: 170px;
+    height: 80px;
+  }
+
+  .plus {
+    width: 80px;
+    height: 170px;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .calculator_screen {
+    width: 300px;
+    height: 100px;
+    font-size: 35px;
+  }
+  .calculator_body {
+    width: 330px;
+    height: 550px;
+    padding: 5px;
+  }
+  .btn {
+    width: 70px;
+    height: 70px;
+  }
+  .clear {
+    width: 150px;
+    height: 70px;
+  }
+
+  .plus {
+    height: 150px;
+    width: 70px;
+  }
+}
+
+@media only screen and (max-width: 335px) {
+  .calculator_screen {
+    width: 270px;
+    height: 100px;
+    font-size: 35px;
+  }
+  .calculator_body {
+    width: 330px;
+    height: 500px;
+    padding: 0px;
+  }
+  .btn {
+    width: 60px;
+    height: 60px;
+  }
+  .clear {
+    width: 130px;
+    height: 60px;
+  }
+
+  .plus {
+    height: 130px;
+    width: 60px;
+  }
+}
