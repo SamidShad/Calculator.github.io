@@ -15,3 +15,7 @@ Array.from(buttons).forEach((btn) => {
     }
   });
 });
+
+document.addEventListener("contextmenu", (event) => {
+  event.preventDefault();
+});
